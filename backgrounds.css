@@ -1,0 +1,66 @@
+/*class container*/
+.container {
+    border: 6px solid black;
+}
+
+.col {
+    background-color: #0d6efd;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+li {
+    margin: 10px 0;
+}
+
+li a{
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color:white
+}
+
+li a:hover {
+    background-color: #555;
+    color: white;
+
+} 
+
+
+.carousel-caption {  
+    background-color:rgba(0, 0, 0, 0.3);    
+    color: white;
+    font-size: 20px;
+    text-shadow: black 0px 0px 10px;
+
+         
+    
+}
+
+.navbar .megamenu{ padding: 1rem; }
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    overflow-y: auto;
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+/* ============ mobile view .end// ============ */
+
